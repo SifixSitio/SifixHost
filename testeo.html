@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Únete a mi Server de Discord 🌸</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #a7c7e7, #f3a5c3, #f2e7d5);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+      font-family: 'Poppins', sans-serif;
+      color: #444;
+      text-align: center;
+      padding: 30px;
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    h1 {
+      font-size: 3em;
+      color: #ff6f91;
+      margin-bottom: 10px;
+      text-shadow: 3px 3px 6px rgba(255, 105, 180, 0.6);
+    }
+    h2 {
+      font-size: 1.8em;
+      color: #ff7b9c;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.5em;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(45deg, #ff80ab, #ff4081);
+      box-shadow: 0px 4px 15px rgba(255, 64, 129, 0.4);
+      animation: blink 3s infinite;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: linear-gradient(45deg, #ff4081, #d500f9);
+      box-shadow: 0px 6px 20px rgba(213, 0, 249, 0.4);
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .logo-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .logo-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .beta {
+      font-size: 1.2em;
+      color: #ff4081;
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌠 ¡Únete a mi Server de Discord! 🌸</h1>
+  <a href="https://discord.gg/TEJBfNZ6sp" class="btn" target="_blank" onclick="playPascalAudio()">Únete al Server</a>
+
+  <h2>✨ Server en Beta ✨</h2>
+  <div class="logo-container">
+    <img src="https://cdn.discordapp.com/icons/TEJBfNZ6sp/a_34b3f5e6c7e6f8f0cdb207ef1a08d575.gif" alt="Logo del Server de Discord">
+  </div>
+
+  <p class="beta">Este servidor, como la página web, están en *beta* 🎉. ¡Gracias por tu paciencia! 😊</p>
+
+  <!-- Reproductor de audio con música de fondo -->
+  <audio id="background-audio" loop autoplay>
+    <source src="https://www.myinstants.com/media/sounds/te-juro-que-te-amo-instrumental.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="pascal-audio" src="https://www.myinstants.com/media/sounds/pascal_bombsquad.mp3"></audio>
+
+  <script>
+    function playPascalAudio() {
+      document.getElementById('pascal-audio').play();
+    }
+  </script>
+</body>
+</html>
